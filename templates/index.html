@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Order Fulfillment Predictive Analysis</title>
+    <link rel="stylesheet" href="style_home.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            overflow:scroll;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 20px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 20pzpx;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+        legend{
+            font-size: 20px;
+            font-weight: 900;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>E-commerce Order Fulfillment Predictive Analysis</h1>
+    </header>
+  
+    <div class="container">
+        <section>
+            <h2>Welcome to our E-commerce Order Fulfillment Predictive Analysis Project</h2>
+            <p>This project aims to optimize order fulfillment processes using predictive analysis techniques.</p>
+            <p>Below is a sample table showing product details:</p>
+        </section>
+        <section class="form-container">
+            <form action="/submit" method="POST">
+                <legend for="form-section">Product Details</legend>
+                <div class="form-group">
+                    <lable for="title">Product Title:</lable>
+                    <input type="text" id="title" name="title" required>
+              
+                    <label for="norating1">Number of Ratings:</label>
+                    <input type="number" id="norating1" name="norating1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="noreviews1">Number of Reviews:</label>
+                    <input type="number" id="noreviews1" name="noreviews1" required>
+               
+                    <label for="rating">Rating:</label>
+                    <input type="number" id="rating" name="rating" required>
+                </div>
+                <div class="form-group">
+                    <label for="price1">Price:</label>
+                    <input type="number" id="price1" name="price1" required>
+               
+                    <label for="actprice">Actprice:</label>
+                    <input type="number" id="actprice" name="actprice" required>
+                </div>
+                <div class="form-group">
+                    <label for="maincateg">Gender</label>
+                    <select name="maincateg" id="maincateg">
+                        <option value=""></option>
+                        <option value="Men">Men</option>
+                        <option value="Women">Women</option>
+                    </select>
+                    <label for="platform">Platform</label>
+                    <select name="platform" id="platform">
+                        <option value=""></option>
+                        <option value="Flipkart">Flipkart</option>
+                        <option value="Amazon">Amazon</option>
+                    </select>
+                </div>
+                <div class="form-group rating-inputs">
+                    <div class="rating-input">
+                        <label for="star_1f">Number of 1-Star:</label>
+                        <input type="number" id="star_1f" name="star_1f" required>
+                    </div>
+                    <div class="rating-input">
+                        <label for="star_2f">Number of 2-Star:</label>
+                        <input type="number" id="star_2f" name="star_2f" required>
+                    </div>
+                    <div class="rating-input">
+                        <label for="star_3f">Number of 3-Star:</label>
+                        <input type="number" id="star_3f" name="star_3f" required>
+                    </div>
+                    <div class="rating-input">
+                        <label for="star_4f">Number of 4-Star:</label>
+                        <input type="number" id="star_4f" name="star_4f" required>
+                    </div>
+                    <div class="rating-input">
+                        <label for="star_5f">Number of 5-Star:</label>
+                        <input type="number" id="star_5f" name="star_5f" required>
+                    </div>
+                </div>
+
+                <input type="submit" value="Submit" >
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 E-commerce Order Fulfillment Predictive Analysis Project</p>
+    </footer>
+</body>
+
+</html>
